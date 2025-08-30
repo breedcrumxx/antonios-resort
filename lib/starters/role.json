@@ -1,0 +1,35 @@
+[
+  {
+    "_id": {
+      "$oid": "66cdcbeb4543ab5b75d19042"
+    },
+    "role": "Client",
+    "systemcontrol": false,
+    "websiteaccess": true,
+    "websitecontrol": false,
+    "utilityaccess": false,
+    "businesscontrol": false
+  },
+  {
+    "_id": {
+      "$oid": "66cdcbeb4543ab5b75d19043"
+    },
+    "role": "System admin",
+    "systemcontrol": true,
+    "websiteaccess": true,
+    "websitecontrol": false,
+    "utilityaccess": false,
+    "businesscontrol": false
+  },
+  {
+    "_id": {
+      "$oid": "66cdcbeb4543ab5b75d19044"
+    },
+    "role": "Admin",
+    "systemcontrol": false,
+    "websiteaccess": true,
+    "websitecontrol": true,
+    "utilityaccess": true,
+    "businesscontrol": true
+  }
+]

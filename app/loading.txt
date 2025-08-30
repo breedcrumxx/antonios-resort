@@ -1,0 +1,29 @@
+'use client'
+
+import { logo } from "@/lib/configs/config-file";
+import { Spinner } from "@nextui-org/spinner";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect } from "react";
+
+export default function LoadingPage() {
+
+  // useEffect(() => {
+  //   document.querySelector('body')?.classList.add('transition-page')
+
+  //   return () => {
+  //     document.querySelector('body')?.classList.remove('transition-page')
+  //   }
+  // }, [])
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        // initial={{ opacity: 1 }}
+        // exit={{ opacity: 0 }}
+        className="fixed top-0 left-0 w-screen min-h-screen flex items-center justify-center z-[100]">
+        {/* <Spinner label="Welcome to Antonio's Resort" /> */}
+        <img src={logo} alt="company-logo" className="h-[150px] w-[150px]" />
+      </motion.div>
+    </AnimatePresence>
+  )
+}

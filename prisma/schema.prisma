@@ -1,0 +1,383 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+// TOP LEVEL
+model user {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  email       String    @unique
+  firstname   String
+  lastname    String
+  password    String
+  roleid      String    @db.ObjectId
+  verified    Boolean   @default(false)
+  datecreated DateTime
+  block       DateTime?
+  image       String    @default("")
+
+  lastacceptedprivacy        DateTime
+  lastacceptedagreement      DateTime?
+  lastacceptedtermscondition DateTime
+
+  role               role                 @relation(fields: [roleid], references: [id])
+  booking            booking[]
+  userlogs           userlogs[]
+  systemerrorlogs    systemerrorlogs[]
+  problemreport      problemreport[]
+  notification       notification[]
+  maintenancerecords maintenancerecords[]
+  resetpasswordlink  resetpasswordlink[]
+  issues             String[]             @db.ObjectId
+  mycouponids        String[]             @db.ObjectId
+  mycoupons          coupon[]             @relation(fields: [mycouponids], references: [id])
+  discussion         discussion[]
+}
+
+model resetpasswordlink {
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
+  userid     String    @db.ObjectId
+  validuntil DateTime
+  used       DateTime?
+  user       user      @relation(fields: [userid], references: [id])
+}
+
+model role {
+  id              String  @id @default(auto()) @map("_id") @db.ObjectId
+  role            String  @unique
+  systemcontrol   Boolean @default(false)
+  businesscontrol Boolean @default(false)
+  websitecontrol  Boolean @default(false)
+  utilityaccess   Boolean @default(false)
+  websiteaccess   Boolean @default(true)
+  user            user[]
+}
+
+model userlogs {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  userid      String   @db.ObjectId()
+  ipaddress   String
+  device      String
+  activity    String
+  weblocation String
+  logdate     DateTime
+
+  user user @relation(fields: [userid], references: [id])
+}
+
+model systemerrorlogs {
+  id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  severity       String // fatal | moderate | minor
+  message        String
+  code           String
+  stacktrace     String
+  userip         String
+  requesturl     String // 
+  requestheaders String
+  requestmethod  String
+  datetime       DateTime
+
+  requestbody String?
+  useraction  String?
+  userid      String? @db.ObjectId
+
+  user user? @relation(fields: [userid], references: [id])
+}
+
+model problemreport {
+  id           String   @id @default(auto()) @map("_id") @db.ObjectId
+  issueid      String
+  report       String
+  severity     String // fatal | moderate | minor
+  code         String
+  errormessage String
+  stacktrace   String
+  status       String   @default("Unsolved") // Unsolved | Resolved
+  datetime     DateTime
+  image        String?
+  userid       String?  @db.ObjectId
+  user         user?    @relation(fields: [userid], references: [id])
+  issue        issue[]  @relation(fields: [issueId], references: [id])
+  issueId      String[] @db.ObjectId
+}
+
+model issue {
+  id        String          @id @default(auto()) @map("_id") @db.ObjectId
+  issueid   Int             @unique
+  sampleids String[]        @db.ObjectId
+  samples   problemreport[] @relation(fields: [sampleids], references: [id])
+}
+
+model maintenancerecords {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  memo        String
+  type        String // Immediate | scheduled
+  coverage    String // all | website | admin
+  status      String   @default("Pending") // Aborted | success | pending | in-progess
+  duration    Int
+  issuedate   DateTime
+  lastupdated DateTime
+  start       DateTime
+  end         DateTime
+  initiatorid String   @db.ObjectId
+
+  initiator user @relation(fields: [initiatorid], references: [id])
+}
+
+// migrated
+model booking {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  bookingid   String    @unique
+  book_at     DateTime
+  checkin     DateTime
+  checkout    DateTime
+  slot        String // day | night
+  days        Int
+  packageid   String    @db.ObjectId
+  packagedata String
+  packages    packages? @relation(fields: [packageid], references: [id])
+  quantity    Int
+
+  // guest head count
+  adults     Int
+  seniorpwds Int
+  teenkids   Int
+  celebrant  Int @default(0)
+
+  total              Float
+  downpaymentasofnow Float
+  status             String
+
+  legalid String? @db.ObjectId
+  legal   legal?  @relation(fields: [legalid], references: [id])
+
+  refundid    String?         @db.ObjectId
+  refund      refunds?        @relation(fields: [refundid], references: [id])
+  balance     balancerecord[]
+  transacid   String          @unique @db.ObjectId
+  transaction transaction     @relation(fields: [transacid], references: [id])
+
+  clientid String @db.ObjectId
+  client   user   @relation(fields: [clientid], references: [id])
+
+  lastacceptedprivacy        DateTime
+  lastacceptedagreement      DateTime
+  lastacceptedtermscondition DateTime
+  // lastacceptedcancellationrefund DateTime
+
+  bookinglog               bookinglog[]
+  ratinglinks              ratinglinks?
+  rejectionandcancellation rejectionandcancellation?
+  discussion               discussion[]
+  couponids                String[]                  @db.ObjectId
+  appliedcoupons           coupon[]                  @relation(fields: [couponids], references: [id])
+}
+
+model legal {
+  id              String    @id @default(auto()) @map("_id") @db.ObjectId
+  paid_on         DateTime
+  amount          Float
+  refunded_amount Float     @default(0)
+  signature       String    @default("")
+  refunded_on     DateTime?
+  booking         booking[]
+}
+
+model transaction {
+  id              String   @id @default(auto()) @map("_id") @db.ObjectId
+  transactionid   String   @unique
+  reference       String   @unique
+  referenceimage  String
+  payment_type    String
+  expectedpayment Float
+  type            String
+  date            DateTime
+  booking         booking?
+}
+
+model discussion {
+  id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  discussionid   String   @unique
+  date           DateTime
+  recentactivity Int
+  type           String // cancel | reschedule | refund
+  status         String // pending | on process | solved
+  allowinteract  Boolean  @default(false)
+  // seen           Boolean  @default(false)
+  bookingid      String?  @db.ObjectId
+  userid         String?  @db.ObjectId
+  chats          chat[]
+  user           user?    @relation(fields: [userid], references: [id])
+  booking        booking? @relation(fields: [bookingid], references: [id])
+}
+
+model chat {
+  id           String     @id @default(auto()) @map("_id") @db.ObjectId
+  date         Int
+  seen         Boolean    @default(false)
+  type         String // system | message 
+  status       String     @default("sent") // sending | sent | failed 
+  content      String
+  sender       String
+  discussion   discussion @relation(fields: [discussionid], references: [id])
+  discussionid String     @db.ObjectId
+}
+
+model refunds {
+  id              String    @id @default(auto()) @map("_id") @db.ObjectId
+  refundableuntil DateTime
+  isvalid         Boolean
+  refundables     Float
+  refunded        Boolean   @default(false)
+  booking         booking[]
+}
+
+model balancerecord {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  bookingid String   @db.ObjectId
+  type      String
+  record    String
+  total     Float
+  extra     String? // for additional data that may become useful
+  booking   booking? @relation(fields: [bookingid], references: [id])
+}
+
+model rejectionandcancellation {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  bookingid  String   @unique @db.ObjectId
+  reason     String
+  type       String // rejected | cancelled
+  created_at DateTime
+
+  booking booking @relation(fields: [bookingid], references: [id])
+}
+
+model packages {
+  id                 String @id @default(auto()) @map("_id") @db.ObjectId
+  packagename        String
+  packagedescription String
+  maxpax             Int
+
+  type         String // VILLA = can be continued | EVENT = continues false | COTTAGE = continues false
+  day_tour     String?
+  night_tour   String?
+  regular_stay String?
+
+  penaltyamount Float   @default(0) // exclude on cottages
+  extendable    Boolean @default(false) // only available to events
+  extendprice   Float   @default(0) // only available to events
+  quantity      Int
+  discount      Float
+
+  status String @default("active") // active | deleted
+
+  inclusion String[]
+  images    String[] // do not delete images for package snapshot
+  booking   booking[]
+  ratings   ratinglinks[]
+}
+
+model schedule {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  type     String
+  slot     String
+  timein   String
+  timeout  String
+  duration Int
+}
+
+model ratinglinks {
+  id         String    @id @default(auto()) @map("_id") @db.ObjectId
+  used       Boolean   @default(false)
+  created_at DateTime
+  rated_at   DateTime?
+  bookingid  String    @unique @db.ObjectId
+  booking    booking   @relation(fields: [bookingid], references: [id])
+  packageid  String    @db.ObjectId
+  packages   packages  @relation(fields: [packageid], references: [id])
+
+  experience  Int @default(0)
+  facility    Int @default(0)
+  cleanliness Int @default(0)
+  service     Int @default(0)
+
+  comment String @default("")
+}
+
+model coupon {
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  couponcode        String   @unique
+  couponname        String
+  coupondescription String
+  create_at         DateTime
+  validuntil        DateTime
+  type              String // anyone | selected
+  max               Int
+  status            String   @default("Active") // Active | Disabled | Full | Deleted
+  percent           Boolean
+  amount            Float // percent | amount
+  minamount         Int
+  applicableto      String // reschedule | cottage | villa | event
+  userids           String[] @db.ObjectId
+  bookingids        String[] @db.ObjectId
+
+  user     user[]    @relation(fields: [userids], references: [id])
+  bookings booking[] @relation(fields: [bookingids], references: [id])
+}
+
+model bookinglog {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  status    String // check-in - check-out
+  bookingid String   @db.ObjectId
+  log_at    DateTime
+  booking   booking  @relation(fields: [bookingid], references: [id])
+}
+
+model system {
+  id     String @id @default(auto()) @map("_id") @db.ObjectId
+  name   String @unique
+  config String
+}
+
+model catalogs {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  type        String // agreement | terms and conditions | cookie policy | privacy policy 
+  content     String
+  datecreated DateTime
+}
+
+model notification {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  head      String
+  content   String
+  type      String // system | admin | user
+  read      Boolean  @default(false)
+  date      DateTime
+  extratype String? // bookingid, link
+  extra     String? // object string or id
+  userid    String?  @db.ObjectId
+  user      user?    @relation(fields: [userid], references: [id])
+}
+
+model sitevisit {
+  id      String   @id @default(auto()) @map("_id") @db.ObjectId
+  device  String
+  address String
+  date    DateTime
+}
+
+model collection {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  collectionname        String
+  collectiondescription String
+  images                String[]
+  createdat             DateTime
+}

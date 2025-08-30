@@ -1,0 +1,56 @@
+[
+  {
+    "_id": {
+      "$oid": "668bdfca7bd49fb0a986a8f1"
+    },
+    "email": "dandan213123@gmail.com",
+    "firstname": "Dan Ivan",
+    "lastname": "Rosete (Client)",
+    "password": "$2b$10$8mxSO0rOO4ui7ByQ.fajReqX7dcusKcBQmCQv2W48dTw.BLK3xagK",
+    "roleid": {
+      "$oid": "66cdcbeb4543ab5b75d19042"
+    },
+    "datecreated": {
+      "$date": "2024-07-08T12:47:06.357Z"
+    },
+    "image": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/b5aedf64-3afb-4b5a-a04f-90d328eaac21.png",
+    "default": true,
+    "verified": true
+  },
+  {
+    "_id": {
+      "$oid": "668bc3587bd49fb0a986a8ce"
+    },
+    "email": "danrosete890@gmail.com",
+    "firstname": "Dan",
+    "lastname": "Rosete (SU)",
+    "password": "$2b$10$5EReGxkggFmVhkso46eoLOmXISPEszMvqfA3Kdc2/TmSVO2edCHne",
+    "roleid": {
+      "$oid": "66cdcbeb4543ab5b75d19043"
+    },
+    "datecreated": {
+      "$date": "2024-07-08T10:45:44.756Z"
+    },
+    "image": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/ffb1a26a-136a-48d0-aeb5-0fa9f5f2fb7f.png",
+    "default": true,
+    "verified": true
+  },
+  {
+    "_id": {
+      "$oid": "6695e02f480e793736552c52"
+    },
+    "email": "ravensanao@gmail.com",
+    "firstname": "Raven",
+    "lastname": "Sanao (BPS)",
+    "password": "$2b$10$jmqmzdqTEGm7wacsQ57OBOydanYPQsS9fz./ujRSNFmqZFQnJZIgS",
+    "roleid": {
+      "$oid": "66cdcbeb4543ab5b75d19044"
+    },
+    "datecreated": {
+      "$date": "2024-07-08T12:47:06.357Z"
+    },
+    "image": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/08a204ad-6491-4379-9969-a799ff14da1a.png",
+    "default": true,
+    "verified": true
+  }
+]

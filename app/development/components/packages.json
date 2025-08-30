@@ -1,0 +1,907 @@
+[
+  {
+    "id": "6652e39d9985a0c555f58a79",
+    "basepackageid": "6628e96089fe344ad9c4dce0",
+    "customname": "Night Tour - Night Trip",
+    "customdescription": "Join us for a special Night Tour - Night Trip! Discover the city's beauty after dark with our guided tour. See the lights, hear the night sounds, and enjoy a peaceful evening stroll. Perfect for those who love exploring new places at night. Book your spot now for an unforgettable experience!",
+    "creatorid": "6634b0f0b24b8afc3af95a6c",
+    "status": "Available",
+    "basepackage": {
+      "id": "6628e96089fe344ad9c4dce0",
+      "basename": "Base night tour",
+      "basedescription": "",
+      "typeid": "6627be716535923064da2714",
+      "baseprice": 250,
+      "packagediscount": 5,
+      "serviceids": [],
+      "status": true,
+      "applyadmin": true,
+      "applyclient": true,
+      "included": [
+        {
+          "id": "66290fcd5c0976add0903d06",
+          "servicename": "Water pool",
+          "status": "Available",
+          "price": 2000,
+          "categoryid": "662905a94aa399e739e2a674",
+          "category": {
+            "id": "662905a94aa399e739e2a674",
+            "categoryname": "Facilities"
+          }
+        }
+      ],
+      "basetype": {
+        "id": "6627be716535923064da2714",
+        "typename": "Night Tour",
+        "timein": "17:00",
+        "duration": 8,
+        "continuesoffer": true
+      },
+      "images": [
+        {
+          "id": "663625025cd6a6ad072e235f",
+          "thumbnailurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/f542ded8-bc7d-421a-b829-66c4d0601f35-thumb.jpg",
+          "imageurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/f542ded8-bc7d-421a-b829-66c4d0601f35.jpg",
+          "basepackageid": "6628e96089fe344ad9c4dce0"
+        },
+        {
+          "id": "663625025cd6a6ad072e2360",
+          "thumbnailurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/e5390e6b-5d67-462d-a65c-9b9863185e60-thumb.jpg",
+          "imageurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/e5390e6b-5d67-462d-a65c-9b9863185e60.jpg",
+          "basepackageid": "6628e96089fe344ad9c4dce0"
+        }
+      ]
+    },
+    "services": [
+      {
+        "id": "66290fcd5c0976add0903d06",
+        "servicename": "Water pool",
+        "status": "Available",
+        "price": 2000,
+        "categoryid": "662905a94aa399e739e2a674",
+        "category": {
+          "id": "662905a94aa399e739e2a674",
+          "categoryname": "Facilities"
+        }
+      },
+      {
+        "id": "66290fa95c0976add0903d05",
+        "servicename": "BBQ pit",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905a94aa399e739e2a674",
+        "category": {
+          "id": "662905a94aa399e739e2a674",
+          "categoryname": "Facilities"
+        }
+      },
+      {
+        "id": "66290fe05c0976add0903d07",
+        "servicename": "Wifi fiber (300mbps)",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905b04aa399e739e2a675",
+        "category": {
+          "id": "662905b04aa399e739e2a675",
+          "categoryname": "Connectivity"
+        }
+      },
+      {
+        "id": "66290ffa5c0976add0903d09",
+        "servicename": "KTV room",
+        "status": "Available",
+        "price": 500,
+        "categoryid": "662905b94aa399e739e2a676",
+        "category": {
+          "id": "662905b94aa399e739e2a676",
+          "categoryname": "Entertainment"
+        }
+      },
+      {
+        "id": "662910605c0976add0903d0e",
+        "servicename": "Room with AC",
+        "status": "Available",
+        "price": 1000,
+        "categoryid": "662905c04aa399e739e2a677",
+        "category": {
+          "id": "662905c04aa399e739e2a677",
+          "categoryname": "Amenities"
+        }
+      }
+    ],
+    "creator": {
+      "id": "6634b0f0b24b8afc3af95a6c",
+      "email": "danrosete890@gmail.com",
+      "firstname": "Dan",
+      "lastname": "Rosete (Admin)",
+      "password": "$2b$10$NMZ4CABM/vxeXgtohmxlFOyvL8w65fDZYxZUaxfBhil6w24tp7mye",
+      "role": "Admin"
+    },
+    "ratingkeys": []
+  },
+  {
+    "id": "665be8b1dc6e6d8caf2a9dd9",
+    "basepackageid": "6627d1d71325cf0f0b257dcf",
+    "customname": "Day Tour - Summer Fun Package",
+    "customdescription": "Explore the best of summer with our Day Tour - Summer Fun Package! Enjoy a day filled with excitement as you soak up the sun by the pool, indulge in refreshing drinks, and take part in thrilling outdoor activities. Perfect for families and friends looking to make the most of their summer getaway!\n",
+    "creatorid": "6634b0f0b24b8afc3af95a6c",
+    "status": "Available",
+    "basepackage": {
+      "id": "6627d1d71325cf0f0b257dcf",
+      "basename": "Day tour base",
+      "basedescription": "Discover the beauty of Casa Tejada under the sun with our Day Tour Base Package. Designed for day experience, featuring a mix of scenic sights, engaging day activities. Join us for a day of discovery and fun!",
+      "typeid": "6627be586535923064da2713",
+      "baseprice": 200,
+      "packagediscount": 5,
+      "serviceids": [],
+      "status": true,
+      "applyadmin": true,
+      "applyclient": true,
+      "included": [
+        {
+          "id": "66290fcd5c0976add0903d06",
+          "servicename": "Water pool",
+          "status": "Available",
+          "price": 2000,
+          "categoryid": "662905a94aa399e739e2a674",
+          "category": {
+            "id": "662905a94aa399e739e2a674",
+            "categoryname": "Facilities"
+          }
+        }
+      ],
+      "basetype": {
+        "id": "6627be586535923064da2713",
+        "typename": "Day tour",
+        "timein": "08:00",
+        "duration": 8,
+        "continuesoffer": true
+      },
+      "images": [
+        {
+          "id": "663624e85cd6a6ad072e235d",
+          "thumbnailurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/0ae97498-ff2d-41c2-9f91-e1465691eeca-thumb.jpg",
+          "imageurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/0ae97498-ff2d-41c2-9f91-e1465691eeca.jpg",
+          "basepackageid": "6627d1d71325cf0f0b257dcf"
+        },
+        {
+          "id": "663624e85cd6a6ad072e235e",
+          "thumbnailurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/457af917-9d50-40c2-bbe8-f06540b7a6a9-thumb.jpg",
+          "imageurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/457af917-9d50-40c2-bbe8-f06540b7a6a9.jpg",
+          "basepackageid": "6627d1d71325cf0f0b257dcf"
+        }
+      ]
+    },
+    "services": [
+      {
+        "id": "66290fcd5c0976add0903d06",
+        "servicename": "Water pool",
+        "status": "Available",
+        "price": 2000,
+        "categoryid": "662905a94aa399e739e2a674",
+        "category": {
+          "id": "662905a94aa399e739e2a674",
+          "categoryname": "Facilities"
+        }
+      },
+      {
+        "id": "66290fa95c0976add0903d05",
+        "servicename": "BBQ pit",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905a94aa399e739e2a674",
+        "category": {
+          "id": "662905a94aa399e739e2a674",
+          "categoryname": "Facilities"
+        }
+      },
+      {
+        "id": "66290fe05c0976add0903d07",
+        "servicename": "Wifi fiber (300mbps)",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905b04aa399e739e2a675",
+        "category": {
+          "id": "662905b04aa399e739e2a675",
+          "categoryname": "Connectivity"
+        }
+      },
+      {
+        "id": "662910095c0976add0903d0a",
+        "servicename": "Standard billiards",
+        "status": "Available",
+        "price": 400,
+        "categoryid": "662905b94aa399e739e2a676",
+        "category": {
+          "id": "662905b94aa399e739e2a676",
+          "categoryname": "Entertainment"
+        }
+      },
+      {
+        "id": "662910205c0976add0903d0b",
+        "servicename": "Darts and Chessboards",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905b94aa399e739e2a676",
+        "category": {
+          "id": "662905b94aa399e739e2a676",
+          "categoryname": "Entertainment"
+        }
+      },
+      {
+        "id": "662910305c0976add0903d0c",
+        "servicename": "Fossball/Soccer table",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905b94aa399e739e2a676",
+        "category": {
+          "id": "662905b94aa399e739e2a676",
+          "categoryname": "Entertainment"
+        }
+      },
+      {
+        "id": "6629107f5c0976add0903d10",
+        "servicename": "5 meters rain shower",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905c04aa399e739e2a677",
+        "category": {
+          "id": "662905c04aa399e739e2a677",
+          "categoryname": "Amenities"
+        }
+      }
+    ],
+    "creator": {
+      "id": "6634b0f0b24b8afc3af95a6c",
+      "email": "danrosete890@gmail.com",
+      "firstname": "Dan",
+      "lastname": "Rosete (Admin)",
+      "password": "$2b$10$NMZ4CABM/vxeXgtohmxlFOyvL8w65fDZYxZUaxfBhil6w24tp7mye",
+      "role": "Admin"
+    },
+    "ratingkeys": [
+      {
+        "id": "667b8fea2e9f8cb70d125560",
+        "used": false,
+        "date": "2024-06-26T03:50:02.244Z",
+        "bookingid": "667b822a2e9f8cb70d125535",
+        "packageid": "665be8b1dc6e6d8caf2a9dd9",
+        "rating": null
+      }
+    ]
+  },
+  {
+    "id": "6678e2e2e6c7e5875ac85c02",
+    "basepackageid": "6678dd5ee6c7e5875ac85bf5",
+    "customname": "Long hours - Extended Comfort Package",
+    "customdescription": "Experience an extended stay with our Long Hours Stay Package. Perfect for guests who need extra time to relax and enjoy our resort amenities. This package allows for a check-in at 14:00 and provides a comfortable stay for 22 hours, ensuring you have ample time to unwind and make the most of your resort experience.",
+    "creatorid": "6634b0f0b24b8afc3af95a6c",
+    "status": "Available",
+    "basepackage": {
+      "id": "6678dd5ee6c7e5875ac85bf5",
+      "basename": "Base Long Hours",
+      "basedescription": "Experience an extended stay with our Long Hours Stay Package. Perfect for guests who need extra time to relax and enjoy our resort amenities. This package allows for a check-in at 14:00 and provides a comfortable stay for 22 hours, ensuring you have ample time to unwind and make the most of your resort experience.",
+      "typeid": "6678db7de6c7e5875ac85bf3",
+      "baseprice": 250,
+      "packagediscount": 7,
+      "serviceids": [],
+      "status": true,
+      "applyadmin": false,
+      "applyclient": true,
+      "included": [
+        {
+          "id": "66290fcd5c0976add0903d06",
+          "servicename": "Water pool",
+          "status": "Available",
+          "price": 2000,
+          "categoryid": "662905a94aa399e739e2a674",
+          "category": {
+            "id": "662905a94aa399e739e2a674",
+            "categoryname": "Facilities"
+          }
+        },
+        {
+          "id": "66290fe05c0976add0903d07",
+          "servicename": "Wifi fiber (300mbps)",
+          "status": "Available",
+          "price": 200,
+          "categoryid": "662905b04aa399e739e2a675",
+          "category": {
+            "id": "662905b04aa399e739e2a675",
+            "categoryname": "Connectivity"
+          }
+        },
+        {
+          "id": "662910425c0976add0903d0d",
+          "servicename": "TV with Netflix",
+          "status": "Available",
+          "price": 500,
+          "categoryid": "662905b94aa399e739e2a676",
+          "category": {
+            "id": "662905b94aa399e739e2a676",
+            "categoryname": "Entertainment"
+          }
+        }
+      ],
+      "basetype": {
+        "id": "6678db7de6c7e5875ac85bf3",
+        "typename": "Long hours",
+        "timein": "14:00",
+        "duration": 22,
+        "continuesoffer": true
+      },
+      "images": [
+        {
+          "id": "6678dd5ee6c7e5875ac85bf9",
+          "thumbnailurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/e2a67927-7f2b-44b5-8327-4bbef9a01641-thumb.jpg",
+          "imageurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/e2a67927-7f2b-44b5-8327-4bbef9a01641.jpg",
+          "basepackageid": "6678dd5ee6c7e5875ac85bf5"
+        },
+        {
+          "id": "6678dd5ee6c7e5875ac85bfa",
+          "thumbnailurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/f6214c78-7b99-4175-9b1e-134ffec469d8-thumb.jpg",
+          "imageurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/f6214c78-7b99-4175-9b1e-134ffec469d8.jpg",
+          "basepackageid": "6678dd5ee6c7e5875ac85bf5"
+        }
+      ]
+    },
+    "services": [
+      {
+        "id": "66290fa95c0976add0903d05",
+        "servicename": "BBQ pit",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905a94aa399e739e2a674",
+        "category": {
+          "id": "662905a94aa399e739e2a674",
+          "categoryname": "Facilities"
+        }
+      },
+      {
+        "id": "66290fcd5c0976add0903d06",
+        "servicename": "Water pool",
+        "status": "Available",
+        "price": 2000,
+        "categoryid": "662905a94aa399e739e2a674",
+        "category": {
+          "id": "662905a94aa399e739e2a674",
+          "categoryname": "Facilities"
+        }
+      },
+      {
+        "id": "66290fe05c0976add0903d07",
+        "servicename": "Wifi fiber (300mbps)",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905b04aa399e739e2a675",
+        "category": {
+          "id": "662905b04aa399e739e2a675",
+          "categoryname": "Connectivity"
+        }
+      },
+      {
+        "id": "66290fee5c0976add0903d08",
+        "servicename": "TV Cable",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905b04aa399e739e2a675",
+        "category": {
+          "id": "662905b04aa399e739e2a675",
+          "categoryname": "Connectivity"
+        }
+      },
+      {
+        "id": "66290ffa5c0976add0903d09",
+        "servicename": "KTV room",
+        "status": "Available",
+        "price": 500,
+        "categoryid": "662905b94aa399e739e2a676",
+        "category": {
+          "id": "662905b94aa399e739e2a676",
+          "categoryname": "Entertainment"
+        }
+      },
+      {
+        "id": "662910205c0976add0903d0b",
+        "servicename": "Darts and Chessboards",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905b94aa399e739e2a676",
+        "category": {
+          "id": "662905b94aa399e739e2a676",
+          "categoryname": "Entertainment"
+        }
+      },
+      {
+        "id": "662910305c0976add0903d0c",
+        "servicename": "Fossball/Soccer table",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905b94aa399e739e2a676",
+        "category": {
+          "id": "662905b94aa399e739e2a676",
+          "categoryname": "Entertainment"
+        }
+      },
+      {
+        "id": "662910425c0976add0903d0d",
+        "servicename": "TV with Netflix",
+        "status": "Available",
+        "price": 500,
+        "categoryid": "662905b94aa399e739e2a676",
+        "category": {
+          "id": "662905b94aa399e739e2a676",
+          "categoryname": "Entertainment"
+        }
+      }
+    ],
+    "creator": {
+      "id": "6634b0f0b24b8afc3af95a6c",
+      "email": "danrosete890@gmail.com",
+      "firstname": "Dan",
+      "lastname": "Rosete (Admin)",
+      "password": "$2b$10$NMZ4CABM/vxeXgtohmxlFOyvL8w65fDZYxZUaxfBhil6w24tp7mye",
+      "role": "Admin"
+    },
+    "ratingkeys": []
+  },
+  {
+    "id": "6678e372e6c7e5875ac85c0c",
+    "basepackageid": "6678de11e6c7e5875ac85bfb",
+    "customname": "Overnight - Nighttime Relaxation",
+    "customdescription": "Enjoy a restful night with our Overnight Stay Package. This package is perfect for guests looking for a comfortable overnight stay, allowing you to check in at 17:00 and providing 13 hours of relaxation and enjoyment of our resort's amenities. Ideal for a quick getaway or a convenient stopover.",
+    "creatorid": "6634b0f0b24b8afc3af95a6c",
+    "status": "Available",
+    "basepackage": {
+      "id": "6678de11e6c7e5875ac85bfb",
+      "basename": "Base Overnight",
+      "basedescription": "Enjoy a restful night with our Overnight Stay Package. This package is perfect for guests looking for a comfortable overnight stay, allowing you to check in at 17:00 and providing 13 hours of relaxation and enjoyment of our resort's amenities. Ideal for a quick getaway or a convenient stopover.",
+      "typeid": "6678dbb5e6c7e5875ac85bf4",
+      "baseprice": 260,
+      "packagediscount": 5,
+      "serviceids": [],
+      "status": true,
+      "applyadmin": true,
+      "applyclient": true,
+      "included": [
+        {
+          "id": "66290fcd5c0976add0903d06",
+          "servicename": "Water pool",
+          "status": "Available",
+          "price": 2000,
+          "categoryid": "662905a94aa399e739e2a674",
+          "category": {
+            "id": "662905a94aa399e739e2a674",
+            "categoryname": "Facilities"
+          }
+        },
+        {
+          "id": "66290ffa5c0976add0903d09",
+          "servicename": "KTV room",
+          "status": "Available",
+          "price": 500,
+          "categoryid": "662905b94aa399e739e2a676",
+          "category": {
+            "id": "662905b94aa399e739e2a676",
+            "categoryname": "Entertainment"
+          }
+        },
+        {
+          "id": "66290fee5c0976add0903d08",
+          "servicename": "TV Cable",
+          "status": "Available",
+          "price": 200,
+          "categoryid": "662905b04aa399e739e2a675",
+          "category": {
+            "id": "662905b04aa399e739e2a675",
+            "categoryname": "Connectivity"
+          }
+        },
+        {
+          "id": "66290fe05c0976add0903d07",
+          "servicename": "Wifi fiber (300mbps)",
+          "status": "Available",
+          "price": 200,
+          "categoryid": "662905b04aa399e739e2a675",
+          "category": {
+            "id": "662905b04aa399e739e2a675",
+            "categoryname": "Connectivity"
+          }
+        }
+      ],
+      "basetype": {
+        "id": "6678dbb5e6c7e5875ac85bf4",
+        "typename": "Overnight",
+        "timein": "17:00",
+        "duration": 13,
+        "continuesoffer": true
+      },
+      "images": [
+        {
+          "id": "6678de11e6c7e5875ac85c00",
+          "thumbnailurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/da45aa42-603c-4a81-b44a-2eb49710e549-thumb.jpg",
+          "imageurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/da45aa42-603c-4a81-b44a-2eb49710e549.jpg",
+          "basepackageid": "6678de11e6c7e5875ac85bfb"
+        },
+        {
+          "id": "6678de11e6c7e5875ac85c01",
+          "thumbnailurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/2aa94736-0999-4fde-b52b-4461e37937bd-thumb.jpg",
+          "imageurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/2aa94736-0999-4fde-b52b-4461e37937bd.jpg",
+          "basepackageid": "6678de11e6c7e5875ac85bfb"
+        }
+      ]
+    },
+    "services": [
+      {
+        "id": "66290fcd5c0976add0903d06",
+        "servicename": "Water pool",
+        "status": "Available",
+        "price": 2000,
+        "categoryid": "662905a94aa399e739e2a674",
+        "category": {
+          "id": "662905a94aa399e739e2a674",
+          "categoryname": "Facilities"
+        }
+      },
+      {
+        "id": "66290fe05c0976add0903d07",
+        "servicename": "Wifi fiber (300mbps)",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905b04aa399e739e2a675",
+        "category": {
+          "id": "662905b04aa399e739e2a675",
+          "categoryname": "Connectivity"
+        }
+      },
+      {
+        "id": "66290fee5c0976add0903d08",
+        "servicename": "TV Cable",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905b04aa399e739e2a675",
+        "category": {
+          "id": "662905b04aa399e739e2a675",
+          "categoryname": "Connectivity"
+        }
+      },
+      {
+        "id": "66290ffa5c0976add0903d09",
+        "servicename": "KTV room",
+        "status": "Available",
+        "price": 500,
+        "categoryid": "662905b94aa399e739e2a676",
+        "category": {
+          "id": "662905b94aa399e739e2a676",
+          "categoryname": "Entertainment"
+        }
+      },
+      {
+        "id": "662910605c0976add0903d0e",
+        "servicename": "Room with AC",
+        "status": "Available",
+        "price": 1000,
+        "categoryid": "662905c04aa399e739e2a677",
+        "category": {
+          "id": "662905c04aa399e739e2a677",
+          "categoryname": "Amenities"
+        }
+      },
+      {
+        "id": "6629108d5c0976add0903d11",
+        "servicename": "Lights and sounds",
+        "status": "Available",
+        "price": 1000,
+        "categoryid": "662905c04aa399e739e2a677",
+        "category": {
+          "id": "662905c04aa399e739e2a677",
+          "categoryname": "Amenities"
+        }
+      }
+    ],
+    "creator": {
+      "id": "6634b0f0b24b8afc3af95a6c",
+      "email": "danrosete890@gmail.com",
+      "firstname": "Dan",
+      "lastname": "Rosete (Admin)",
+      "password": "$2b$10$NMZ4CABM/vxeXgtohmxlFOyvL8w65fDZYxZUaxfBhil6w24tp7mye",
+      "role": "Admin"
+    },
+    "ratingkeys": []
+  },
+  {
+    "id": "6678e430e6c7e5875ac85c15",
+    "basepackageid": "6628e9e689fe344ad9c4dce1",
+    "customname": "Events - Day Event Special",
+    "customdescription": "Make your day truly unforgettable with our Day Event Special package. Perfect for celebrations, corporate gatherings, or any special occasion, this package offers a seamless and memorable experience from start to finish. Whether it's a wedding, a birthday party, or a business meeting, our Day Event Special package provides everything you need for a successful and enjoyable event.",
+    "creatorid": "6634b0f0b24b8afc3af95a6c",
+    "status": "Available",
+    "basepackage": {
+      "id": "6628e9e689fe344ad9c4dce1",
+      "basename": "Base day event",
+      "basedescription": "",
+      "typeid": "6627be9c6535923064da2715",
+      "baseprice": 300,
+      "packagediscount": 5,
+      "serviceids": [],
+      "status": true,
+      "applyadmin": true,
+      "applyclient": true,
+      "included": [
+        {
+          "id": "66290fcd5c0976add0903d06",
+          "servicename": "Water pool",
+          "status": "Available",
+          "price": 2000,
+          "categoryid": "662905a94aa399e739e2a674",
+          "category": {
+            "id": "662905a94aa399e739e2a674",
+            "categoryname": "Facilities"
+          }
+        },
+        {
+          "id": "66290f9a5c0976add0903d04",
+          "servicename": "Function hall",
+          "status": "Available",
+          "price": 1000,
+          "categoryid": "662905a94aa399e739e2a674",
+          "category": {
+            "id": "662905a94aa399e739e2a674",
+            "categoryname": "Facilities"
+          }
+        }
+      ],
+      "basetype": {
+        "id": "6627be9c6535923064da2715",
+        "typename": "Day Event",
+        "timein": "08:00",
+        "duration": 8,
+        "continuesoffer": false
+      },
+      "images": [
+        {
+          "id": "663625265cd6a6ad072e2361",
+          "thumbnailurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/9ad2f347-30ba-44aa-a408-6d8ebbbd244c-thumb.jpg",
+          "imageurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/9ad2f347-30ba-44aa-a408-6d8ebbbd244c.jpg",
+          "basepackageid": "6628e9e689fe344ad9c4dce1"
+        },
+        {
+          "id": "663625265cd6a6ad072e2362",
+          "thumbnailurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/b59ba2fa-3ffc-4bf4-b843-feff2f49fdc5-thumb.jpg",
+          "imageurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/b59ba2fa-3ffc-4bf4-b843-feff2f49fdc5.jpg",
+          "basepackageid": "6628e9e689fe344ad9c4dce1"
+        }
+      ]
+    },
+    "services": [
+      {
+        "id": "66290f9a5c0976add0903d04",
+        "servicename": "Function hall",
+        "status": "Available",
+        "price": 1000,
+        "categoryid": "662905a94aa399e739e2a674",
+        "category": {
+          "id": "662905a94aa399e739e2a674",
+          "categoryname": "Facilities"
+        }
+      },
+      {
+        "id": "66290fcd5c0976add0903d06",
+        "servicename": "Water pool",
+        "status": "Available",
+        "price": 2000,
+        "categoryid": "662905a94aa399e739e2a674",
+        "category": {
+          "id": "662905a94aa399e739e2a674",
+          "categoryname": "Facilities"
+        }
+      },
+      {
+        "id": "66290fe05c0976add0903d07",
+        "servicename": "Wifi fiber (300mbps)",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905b04aa399e739e2a675",
+        "category": {
+          "id": "662905b04aa399e739e2a675",
+          "categoryname": "Connectivity"
+        }
+      },
+      {
+        "id": "6629109b5c0976add0903d12",
+        "servicename": "Corkage",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905c64aa399e739e2a678",
+        "category": {
+          "id": "662905c64aa399e739e2a678",
+          "categoryname": "Services"
+        }
+      },
+      {
+        "id": "662910b75c0976add0903d13",
+        "servicename": "Tables and chairs (1 table 5 chairs per set)",
+        "status": "Available",
+        "price": 500,
+        "categoryid": "662905dd4aa399e739e2a679",
+        "category": {
+          "id": "662905dd4aa399e739e2a679",
+          "categoryname": "Furnitures"
+        }
+      }
+    ],
+    "creator": {
+      "id": "6634b0f0b24b8afc3af95a6c",
+      "email": "danrosete890@gmail.com",
+      "firstname": "Dan",
+      "lastname": "Rosete (Admin)",
+      "password": "$2b$10$NMZ4CABM/vxeXgtohmxlFOyvL8w65fDZYxZUaxfBhil6w24tp7mye",
+      "role": "Admin"
+    },
+    "ratingkeys": []
+  },
+  {
+    "id": "6678e4a9e6c7e5875ac85c1c",
+    "basepackageid": "6628e9f489fe344ad9c4dce2",
+    "customname": "Events - Night Event Special",
+    "customdescription": "Elevate your evening with our Night Event Special package. Perfect for weddings, galas, corporate events, or any nighttime celebration, this package offers a luxurious and enchanting experience. With stunning lighting and décor, your event will shine under the stars, creating unforgettable memories for you and your guests. Let us take care of every detail while you enjoy a magical evening at our resort.",
+    "creatorid": "6634b0f0b24b8afc3af95a6c",
+    "status": "Available",
+    "basepackage": {
+      "id": "6628e9f489fe344ad9c4dce2",
+      "basename": "Base night event",
+      "basedescription": "",
+      "typeid": "6627bea96535923064da2716",
+      "baseprice": 300,
+      "packagediscount": 5,
+      "serviceids": [],
+      "status": true,
+      "applyadmin": true,
+      "applyclient": true,
+      "included": [
+        {
+          "id": "66290fcd5c0976add0903d06",
+          "servicename": "Water pool",
+          "status": "Available",
+          "price": 2000,
+          "categoryid": "662905a94aa399e739e2a674",
+          "category": {
+            "id": "662905a94aa399e739e2a674",
+            "categoryname": "Facilities"
+          }
+        },
+        {
+          "id": "66290f9a5c0976add0903d04",
+          "servicename": "Function hall",
+          "status": "Available",
+          "price": 1000,
+          "categoryid": "662905a94aa399e739e2a674",
+          "category": {
+            "id": "662905a94aa399e739e2a674",
+            "categoryname": "Facilities"
+          }
+        }
+      ],
+      "basetype": {
+        "id": "6627bea96535923064da2716",
+        "typename": "Night Event",
+        "timein": "17:00",
+        "duration": 8,
+        "continuesoffer": false
+      },
+      "images": [
+        {
+          "id": "6636253c5cd6a6ad072e2363",
+          "thumbnailurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/71d768ae-c907-4851-9512-476a42e05a6b-thumb.jpg",
+          "imageurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/71d768ae-c907-4851-9512-476a42e05a6b.jpg",
+          "basepackageid": "6628e9f489fe344ad9c4dce2"
+        },
+        {
+          "id": "6636253c5cd6a6ad072e2364",
+          "thumbnailurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/30cac63a-f43e-4098-8b80-d116f356b028-thumb.jpg",
+          "imageurl": "https://files.edgestore.dev/7uz0f7szgfzmbmnh/publicImages/_public/30cac63a-f43e-4098-8b80-d116f356b028.jpg",
+          "basepackageid": "6628e9f489fe344ad9c4dce2"
+        }
+      ]
+    },
+    "services": [
+      {
+        "id": "66290f9a5c0976add0903d04",
+        "servicename": "Function hall",
+        "status": "Available",
+        "price": 1000,
+        "categoryid": "662905a94aa399e739e2a674",
+        "category": {
+          "id": "662905a94aa399e739e2a674",
+          "categoryname": "Facilities"
+        }
+      },
+      {
+        "id": "66290fcd5c0976add0903d06",
+        "servicename": "Water pool",
+        "status": "Available",
+        "price": 2000,
+        "categoryid": "662905a94aa399e739e2a674",
+        "category": {
+          "id": "662905a94aa399e739e2a674",
+          "categoryname": "Facilities"
+        }
+      },
+      {
+        "id": "66290fe05c0976add0903d07",
+        "servicename": "Wifi fiber (300mbps)",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905b04aa399e739e2a675",
+        "category": {
+          "id": "662905b04aa399e739e2a675",
+          "categoryname": "Connectivity"
+        }
+      },
+      {
+        "id": "66290ffa5c0976add0903d09",
+        "servicename": "KTV room",
+        "status": "Available",
+        "price": 500,
+        "categoryid": "662905b94aa399e739e2a676",
+        "category": {
+          "id": "662905b94aa399e739e2a676",
+          "categoryname": "Entertainment"
+        }
+      },
+      {
+        "id": "662910605c0976add0903d0e",
+        "servicename": "Room with AC",
+        "status": "Available",
+        "price": 1000,
+        "categoryid": "662905c04aa399e739e2a677",
+        "category": {
+          "id": "662905c04aa399e739e2a677",
+          "categoryname": "Amenities"
+        }
+      },
+      {
+        "id": "6629108d5c0976add0903d11",
+        "servicename": "Lights and sounds",
+        "status": "Available",
+        "price": 1000,
+        "categoryid": "662905c04aa399e739e2a677",
+        "category": {
+          "id": "662905c04aa399e739e2a677",
+          "categoryname": "Amenities"
+        }
+      },
+      {
+        "id": "6629109b5c0976add0903d12",
+        "servicename": "Corkage",
+        "status": "Available",
+        "price": 200,
+        "categoryid": "662905c64aa399e739e2a678",
+        "category": {
+          "id": "662905c64aa399e739e2a678",
+          "categoryname": "Services"
+        }
+      },
+      {
+        "id": "662910b75c0976add0903d13",
+        "servicename": "Tables and chairs (1 table 5 chairs per set)",
+        "status": "Available",
+        "price": 500,
+        "categoryid": "662905dd4aa399e739e2a679",
+        "category": {
+          "id": "662905dd4aa399e739e2a679",
+          "categoryname": "Furnitures"
+        }
+      }
+    ],
+    "creator": {
+      "id": "6634b0f0b24b8afc3af95a6c",
+      "email": "danrosete890@gmail.com",
+      "firstname": "Dan",
+      "lastname": "Rosete (Admin)",
+      "password": "$2b$10$NMZ4CABM/vxeXgtohmxlFOyvL8w65fDZYxZUaxfBhil6w24tp7mye",
+      "role": "Admin"
+    },
+    "ratingkeys": []
+  }
+]

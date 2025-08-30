@@ -1,0 +1,221 @@
+[
+  {
+    "_id": {
+      "$oid": "66d5ed67d9e57dad86d29d29"
+    },
+    "packagename": "AR VILLA SMALL",
+    "packagedescription": "testing description",
+    "maxpax": 6,
+    "type": "villa",
+    "day_tour": "{\"timein\":\"11:00\",\"duration\":10,\"price\":3000,\"status\":true}",
+    "night_tour": "{\"timein\":\"14:00\",\"duration\":22,\"price\":4000,\"status\":true}",
+    "regular_stay": "{\"timein\":\"\",\"timeout\":\"\",\"price\":200,\"status\":false}",
+    "penaltyamount": 0,
+    "extendable": false,
+    "extendprice": 0,
+    "inclusion": [
+      "Bunk Beds",
+      "pull out bed",
+      "Air-conditioned",
+      "Private bathroom",
+      "Lanai area",
+      "Mini fridge",
+      "Coffee table and chairs",
+      "Main resort pool access",
+      "Toiletries and towels",
+      "Free coffee and tea",
+      "Wifi access",
+      "Generator and solar ready"
+    ],
+    "quantity": 2,
+    "discount": 5
+  },
+  {
+    "_id": {
+      "$oid": "66d6b020fc4e1d06b5fbdece"
+    },
+    "packagename": "AR LARGE COTTAGE",
+    "packagedescription": "testing",
+    "maxpax": 21,
+    "type": "cottage",
+    "day_tour": "{\"timein\":\"\",\"duration\":5,\"price\":1000,\"status\":false}",
+    "night_tour": "{\"timein\":\"\",\"duration\":5,\"price\":1000,\"status\":false}",
+    "regular_stay": "{\"timein\":\"09:00\",\"timeout\":\"22:00\",\"price\":850,\"status\":true}",
+    "penaltyamount": 0,
+    "extendable": false,
+    "extendprice": 0,
+    "inclusion": [
+      "Public swimming",
+      "For family and friends",
+      "Open monday - sunday",
+      "Beat the heat"
+    ],
+    "quantity": 2,
+    "discount": 0
+  },
+  {
+    "_id": {
+      "$oid": "66d6c2befc4e1d06b5fbdef2"
+    },
+    "packagename": "AR VILLA GRANDE",
+    "packagedescription": "testing description",
+    "maxpax": 14,
+    "type": "villa",
+    "day_tour": "{\"timein\":\"11:00\",\"duration\":10,\"price\":14000,\"status\":true}",
+    "night_tour": "{\"timein\":\"14:00\",\"duration\":22,\"price\":14000,\"status\":true}",
+    "regular_stay": "{\"timein\":\"\",\"timeout\":\"\",\"price\":200,\"status\":false}",
+    "penaltyamount": 0,
+    "extendable": false,
+    "extendprice": 0,
+    "inclusion": [
+      "Fully air conditioned",
+      "1 queen room with own bathroom",
+      "Open plan kitchen living and dining area",
+      "extra mattress, linens, pillow and towels for the extra 4 guest",
+      "American Fridge",
+      "Microwave",
+      "Rice-cooker",
+      "French press (coffee beans not included))",
+      "1 Bunk bed rooms",
+      "1 main shower room",
+      "1 outdoor shower area",
+      "Private pool access",
+      "Outdoor dining and bbq area",
+      "Wifi access",
+      "2 Parking space available",
+      "Commercial Generator and solar",
+      "Fully equiped kitchen",
+      "Main resort pool access"
+    ],
+    "quantity": 1,
+    "discount": 0
+  },
+  {
+    "_id": {
+      "$oid": "66d6c334fc4e1d06b5fbdef9"
+    },
+    "packagename": "AR VILLA MEDIUM",
+    "packagedescription": "testing description",
+    "maxpax": 4,
+    "type": "villa",
+    "day_tour": "{\"timein\":\"11:00\",\"duration\":10,\"price\":2000,\"status\":true}",
+    "night_tour": "{\"timein\":\"14:00\",\"duration\":22,\"price\":3000,\"status\":true}",
+    "regular_stay": "{\"timein\":\"\",\"timeout\":\"\",\"price\":200,\"status\":false}",
+    "penaltyamount": 0,
+    "extendable": false,
+    "extendprice": 0,
+    "inclusion": [
+      "Double bed",
+      "Pull out beds available",
+      "Private bathroom",
+      "air-conditioned",
+      "Lanai area",
+      "With Mini fridge",
+      "Coffee table and chairs",
+      "Main resort pool access",
+      "Toiletries and towel",
+      "Free coffee and tea",
+      "Wifi access",
+      "With Generator and solar"
+    ],
+    "quantity": 1,
+    "discount": 3
+  },
+  {
+    "_id": {
+      "$oid": "66d6c391fc4e1d06b5fbdeff"
+    },
+    "packagename": "AR Umbrella Cottage",
+    "packagedescription": "testing description",
+    "maxpax": 4,
+    "type": "cottage",
+    "day_tour": "{\"timein\":\"11:00\",\"duration\":10,\"price\":1000,\"status\":false}",
+    "night_tour": "{\"timein\":\"14:00\",\"duration\":22,\"price\":1000,\"status\":false}",
+    "regular_stay": "{\"timein\":\"09:00\",\"timeout\":\"22:00\",\"price\":300,\"status\":true}",
+    "penaltyamount": 0,
+    "extendable": false,
+    "extendprice": 0,
+    "inclusion": [
+      "Public Swimming",
+      "Open monday - sunday",
+      "Perfect for friends",
+      "Beat the heat"
+    ],
+    "quantity": 3,
+    "discount": 0
+  },
+  {
+    "_id": {
+      "$oid": "66d6c444fc4e1d06b5fbdf05"
+    },
+    "packagename": "AR MEDIUM COTTAGE",
+    "packagedescription": "testing",
+    "maxpax": 15,
+    "type": "cottage",
+    "day_tour": "{\"timein\":\"\",\"duration\":5,\"price\":1000,\"status\":false}",
+    "night_tour": "{\"timein\":\"\",\"duration\":5,\"price\":1000,\"status\":false}",
+    "regular_stay": "{\"timein\":\"09:00\",\"timeout\":\"22:00\",\"price\":750,\"status\":true}",
+    "penaltyamount": 0,
+    "extendable": false,
+    "extendprice": 0,
+    "inclusion": [
+      "Public swimming",
+      "Good for family outing",
+      "Open monday - sunday",
+      "Beat the heat"
+    ],
+    "quantity": 2,
+    "discount": 0
+  },
+  {
+    "_id": {
+      "$oid": "66d6c49cfc4e1d06b5fbdf0b"
+    },
+    "packagename": "AR XTRA LARGE COTTAGE",
+    "packagedescription": "testing",
+    "maxpax": 40,
+    "type": "cottage",
+    "day_tour": "{\"timein\":\"\",\"duration\":5,\"price\":1000,\"status\":false}",
+    "night_tour": "{\"timein\":\"\",\"duration\":5,\"price\":1000,\"status\":false}",
+    "regular_stay": "{\"timein\":\"09:00\",\"timeout\":\"22:00\",\"price\":2500,\"status\":true}",
+    "penaltyamount": 0,
+    "extendable": false,
+    "extendprice": 0,
+    "inclusion": [
+      "Public swimming",
+      "Best for celebration",
+      "With videoke",
+      "Beat the heat"
+    ],
+    "quantity": 2,
+    "discount": 0
+  },
+  {
+    "_id": {
+      "$oid": "66dc4d4e6a68b96edb3eca69"
+    },
+    "packagename": "AR EVENT CENTER",
+    "packagedescription": "testing",
+    "maxpax": 50,
+    "type": "event",
+    "day_tour": "{\"timein\":\"09:00\",\"duration\":6,\"price\":14000,\"status\":true,\"timeout\":\"17:00\"}",
+    "night_tour": "{\"timein\":\"17:00\",\"duration\":6,\"price\":14500,\"status\":true,\"timeout\":\"22:00\"}",
+    "regular_stay": "{\"timein\":\"09:00\",\"timeout\":\"22:00\",\"price\":200,\"status\":false}",
+    "penaltyamount": 0,
+    "extendable": false,
+    "extendprice": 0,
+    "inclusion": [
+      "Up to 6 hours",
+      "Free Swimming",
+      "Spacious",
+      "Closed venue",
+      "Air-Conditioned",
+      "Parking area",
+      "Dedicated comfort room",
+      "Preparation area",
+      "Generator and solar ready"
+    ],
+    "quantity": 1,
+    "discount": 0
+  }
+]

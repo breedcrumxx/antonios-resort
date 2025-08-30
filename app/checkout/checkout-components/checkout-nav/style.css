@@ -1,0 +1,7 @@
+.max-w-\[1024px\] {
+  max-width: none;
+}
+
+header {
+  justify-content: start;
+}

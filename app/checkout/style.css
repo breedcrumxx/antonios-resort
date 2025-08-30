@@ -1,0 +1,7 @@
+.DayPicker-Day--disabled {
+  color: gray; /* Set color of disabled days */
+}
+
+.DayPicker-Day--reserved {
+  color: red; /* Set color of future reserved days */
+}

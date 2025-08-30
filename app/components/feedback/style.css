@@ -1,0 +1,35 @@
+.user-profile {
+    border-radius: 50%;
+    background: grey;
+}
+.feedback-scroller {
+    overflow: hidden;
+}
+.scroller-top > div,
+.scroller-bottom > div {
+    display: flex;
+}
+.scroller-top > div {
+    animation: slide-to-left 20s linear infinite;
+}
+.scroller-bottom > div {
+    animation: slide-to-left 20s linear infinite reverse;
+}
+.scroller-top > div > *,
+.scroller-bottom > div > * {
+    min-width: calc(100% / 3);
+}
+@keyframes slide-to-left {
+    100% { transform: translateX(-100%) }
+}
+@media (max-width: 640px) {
+    .scroller-top > div {
+        display: block;
+    }
+    .scroller-top > div {
+        animation: none;
+    }
+    .duplicate {
+        display: none;
+    }
+}

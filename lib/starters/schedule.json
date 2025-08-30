@@ -1,0 +1,32 @@
+[
+  {
+    "_id": {
+      "$oid": "66d35063e8afd7f30ae988fa"
+    },
+    "type": "villa",
+    "slot": "day",
+    "timein": "11:00",
+    "timeout": "00:00",
+    "duration": 10
+  },
+  {
+    "_id": {
+      "$oid": "66d35a9fe8afd7f30ae98904"
+    },
+    "type": "villa",
+    "slot": "night",
+    "timein": "14:00",
+    "timeout": "00:00",
+    "duration": 22
+  },
+  {
+    "_id": {
+      "$oid": "66d35b09e8afd7f30ae98906"
+    },
+    "type": "cottage",
+    "slot": "regular",
+    "timein": "09:00",
+    "timeout": "22:00",
+    "duration": 5
+  }
+]

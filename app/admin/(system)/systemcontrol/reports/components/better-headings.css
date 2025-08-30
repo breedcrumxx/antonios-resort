@@ -1,0 +1,29 @@
+.git-box h1 {
+  font-size: 2em; /* Default size for h1 */
+  font-weight: bold; /* Default weight for h1 */
+}
+
+.git-box h2 {
+  font-size: 1.5em; /* Default size for h2 */
+  font-weight: bold; /* Default weight for h2 */
+}
+
+.git-box h3 {
+  font-size: 1.17em; /* Default size for h3 */
+  font-weight: bold; /* Default weight for h3 */
+}
+
+.git-box h4 {
+  font-size: 1em; /* Default size for h4 */
+  font-weight: bold; /* Default weight for h4 */
+}
+
+.git-box h5 {
+  font-size: 0.83em; /* Default size for h5 */
+  font-weight: bold; /* Default weight for h5 */
+}
+
+.git-box h6 {
+  font-size: 0.75em; /* Default size for h6 */
+  font-weight: bold; /* Default weight for h6 */
+}
